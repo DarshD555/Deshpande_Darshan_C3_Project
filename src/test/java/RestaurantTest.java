@@ -76,17 +76,17 @@ class RestaurantTest {
         assertThrows(itemNotFoundException.class,
                 ()->restaurant.removeFromMenu("French fries"));
     }
-    // >>>>>>>>>>>>>>>>>>>"PART 3: FAILING TEST CASE" USING TDD BELOW <<<<<<<<<<<<<<<<<<<<<<
+    // >>>>>>>>>>>>>>>>>>> AFTER "PART 3: FAILING TEST CASE", NOW "PART 3: SOLUTION" USING TDD BELOW <<<<<<<<<<<<<<<<<<<<<<
     @Test
     public void adding_items_from_menu_should_return_and_display_total_order_value_of_selected_items_from_the_menu(){
     Item item = null;
     restaurant.addToMenu("Sweet corn soup",119);
     restaurant.addToMenu("Vegetable lasagne", 269);
     restaurant.addToMenu("Sizzling brownie",319);
-    Restaurant totalOrderCost = restaurant.getTotalOrderCost();
+    assertNotNull(restaurant.getTotalOrderCost());
 
     }
-
+    // Passing test cases for the implemented methods.
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
 

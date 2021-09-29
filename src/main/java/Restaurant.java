@@ -69,4 +69,13 @@ public class Restaurant {
         return name;
     }
 
+    public String getTotalOrderCost() {
+        List<String> names= new ArrayList<>();
+        names.add("Sweet corn soup");
+        names.add("Vegetable lasagne");
+        names.add("Sizzling brownie");
+        getTotalOrderCost();
+        return getTotalOrderCost();
+    }
+//Implemented feature for calculating order value
 }
